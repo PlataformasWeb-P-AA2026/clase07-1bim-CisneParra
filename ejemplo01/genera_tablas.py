@@ -27,7 +27,7 @@ class Club(Base):
     # Mapea la relación entre las clases
     # Club puede acceder a los jugadores asociados
     # por la llave foránea
-    jugadores = relationship("Jugador", back_populates="club")
+    jugadores = relationship("Jugador", back_populates="club") # Atributo virtual solo existe en relationship
 
     
     def __repr__(self):
